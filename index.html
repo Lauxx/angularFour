@@ -8,9 +8,16 @@
 	
 	</head>
 	<body ng-controller="mainControl">
-		{{test}}
-	<ui-view></ui-view>	
-		
+<!-- 		{{test}} -->
+	<div class="container jumbotron">
+		<button type="button" class="btn btn-primary" ui-sref="home">Home</button>
+		<button type="button" class="btn btn-primary" ui-sref="about">About</button>
+		<button type="button" class="btn btn-primary" ui-sref="contact">Contact</button>
+	</div>
+	<div class="container">	
+		<ui-view></ui-view>	
+	</div>
+	
 	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
